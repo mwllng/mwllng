@@ -129,27 +129,27 @@
       position:relative;
     }
 
-    .card:before{
-      content:"";
-      position:absolute;
-      top:14px;
-      left:14px;
-      width:10px;
-      height:10px;
-      border-radius:999px;
-      background:var(--yellow);
-      box-shadow:0 0 14px rgba(255,214,90,.4);
-    }
-
-    .card.pink:before{
-      background:var(--pink);
-      box-shadow:0 0 14px rgba(255,120,200,.4);
-    }
-
     .card b{
-      display:block;
-      margin-bottom:6px;
-    }
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 8px;
+  font-weight:650;
+  letter-spacing:.2px;
+}
+
+.emoji{
+  width:30px;
+  height:30px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:rgba(0,0,0,.18);
+  font-size:16px;
+}
+
 
     .card p{
       margin:0;
@@ -193,6 +193,8 @@
         </div>
       </div>
     </div>
+
+    
 <div class="section">
   <h2>Education</h2>
 
@@ -213,26 +215,29 @@
     <div class="section">
       <h2>Professional Areas</h2>
       <div class="grid">
-        <div class="card">
-          <b>UI/UX Design</b>
-          <p>Clean interfaces, structured information, and intuitive learning flows.</p>
-        </div>
 
-        <div class="card pink">
-          <b>Product Management</b>
-          <p>Turning ambiguity into roadmaps, requirements, and shippable MVP systems.</p>
-        </div>
+  <div class="card">
+    <b><span class="emoji">📣</span> Product Marketing</b>
+    <p>Positioning, messaging, and structured launch frameworks for growth.</p>
+  </div>
 
-        <div class="card">
-          <b>Product Marketing</b>
-          <p>Positioning, messaging, and structured launch frameworks for growth.</p>
-        </div>
+  <div class="card">
+    <b><span class="emoji">🧭</span> Product Management</b>
+    <p>Turning ambiguity into roadmaps, requirements, and shippable MVP systems.</p>
+  </div>
 
-        <div class="card pink">
-          <b>Data Analytics</b>
-          <p>Metrics, dashboards, and insight loops that inform product decisions.</p>
-        </div>
-      </div>
+  <div class="card">
+    <b><span class="emoji">🎨</span> UI/UX Design</b>
+    <p>Clean interfaces, structured information, and intuitive learning flows.</p>
+  </div>
+
+  <div class="card">
+    <b><span class="emoji">📊</span> Data Analytics</b>
+    <p>Metrics, dashboards, and insight loops that inform product decisions.</p>
+  </div>
+
+</div>
+
     </div>
 
     <div class="footer">
